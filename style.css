@@ -1073,7 +1073,7 @@ footer {
 }
 
 .features__service-item--wrapper {
-  width: calc(100% / 2);
+  width: calc(100% / 3);
 }
 
 .pricing__columns--wrapper {
