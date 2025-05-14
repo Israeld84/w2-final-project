@@ -56,6 +56,49 @@ body {
   display: flex;
   align-items: center;
 }
+/* Hamburger icon */
+.hamburger {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: #000; /* Use black text to match your logo */
+  padding-left: 10px;
+}
+
+/* Hide checkbox */
+#menu-toggle {
+  display: none;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .nav__menu-links--wraper {
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background-color: #fff;
+    width: 100%;
+    padding: 10px 0;
+    z-index: 10;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav__menu-links {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  /* Show menu when toggled */
+  #menu-toggle:checked + .hamburger + .nav__menu-links--wraper {
+    display: flex;
+  }
+}
 
 .nav__menu-links a {
   text-decoration: none;
