@@ -56,21 +56,20 @@ body {
   display: flex;
   align-items: center;
 }
-/* Hamburger icon */
+
 .hamburger {
   display: none;
   font-size: 28px;
   cursor: pointer;
-  color: #000; /* Use black text to match your logo */
+  color: #000; 
   padding-left: 10px;
 }
 
-/* Hide checkbox */
 #menu-toggle {
   display: none;
 }
 
-/* Mobile styles */
+
 @media (max-width: 768px) {
   .nav__menu-links--wraper {
     display: none;
@@ -94,7 +93,7 @@ body {
     display: block;
   }
 
-  /* Show menu when toggled */
+
   #menu-toggle:checked + .hamburger + .nav__menu-links--wraper {
     display: flex;
   }
@@ -125,7 +124,7 @@ body {
 }
 
 .nav__menu-link--sign-up > a {
-  margin-left: calc(50px - 34px);
+  margin-left: calc(50px - 24px);
 }
 
 .button--primary {
@@ -237,9 +236,6 @@ button:hover {
   background-color: white;
   border: solid 2px lightgrey;
   border-radius: 8px;
-  /* padding: 48px;wid */
-  /* width: 100%; */
-  /* height: calc(100% - 48px); */
   max-height: max-content;
   width: calc(100% - 48px);
   max-width: 1200px;
@@ -367,6 +363,9 @@ input:focus {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-top: 60px;
+  transform: translateY(10px);
+  transition: transform 0.3s ease
 }
 
 .features__container--row {
@@ -448,6 +447,9 @@ h2 {
 .quality-work__container {
   display: flex;
   flex-wrap: wrap;
+  padding-top: 96px;
+  transform: translateY(10px);
+  transition: transform 0.3s ease
 }
 
 .quality-work__information--wrapper {
@@ -483,6 +485,9 @@ h2 {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  padding-top: 96px;
+  transform: translateY(10px);
+  transition: transform 0.3s ease
 }
 
 .steps__hero-img--wrapper {
@@ -553,6 +558,9 @@ h2 {
   display: flex;
   width: 100%;
   flex-wrap: wrap;
+   padding-top: 106px;
+  transform: translateY(10px);
+  transition: transform 0.3s ease
 }
 
 .values__affordable--img {
@@ -615,6 +623,9 @@ h2 {
   max-width: 100%;
   align-items: center;
   text-align: center;
+   padding-top: 96px;
+  transform: translateY(10px);
+  transition: transform 0.3s ease
 }
 
 .pricing__columns--wrapper {
@@ -789,13 +800,17 @@ p.pricing__column-item--features-list-item {
   margin-left: 48px;
 }
 
-.star-rating--img {
-  width: 10rem;
-  margin: 32px 0 36px 0;
+.star-rating {
+  font-size: 24px;
+  color: gold;
+  margin-bottom: 10px;
+  padding: 30px;
+  margin-left: -20px;
 }
 
 .testimonials__subheading--amazing-user-experience {
-  margin-bottom: 16px;
+  margin-bottom: 10px;
+
 }
 
 .testimonials__information-navagation--wrapper {
@@ -848,6 +863,9 @@ p.pricing__column-item--features-list-item {
   display: flex;
   flex-direction: column;
   align-items: center;
+   padding-top: 96px;
+  transform: translateY(10px);
+  transition: transform 0.3s ease
 }
 
 .faqs__container > .heading--description {
@@ -897,7 +915,7 @@ p.pricing__column-item--features-list-item {
 
 .blob-dark__getting-started--top {
   fill: currentColor;
-  /* color: white; */
+  color: white; 
   position: absolute;
   top: -260px;
   right: -85px;
@@ -941,7 +959,7 @@ p.pricing__column-item--features-list-item {
 .get-started__button--contact-us {
   background-color: #6415ff;
   border: 1px solid rgb(160 174 192);
-  /* background-color: transparent; */
+  background-color: transparent; 
 }
 
 .get-started__button--contact-us:hover {
@@ -1186,7 +1204,7 @@ footer {
 
   .get-started__button--get-started {
     margin: 8px 0;
-    /* margin: 8px 0; */
+
   }
 
   .get-started__buttons--wrapper {
@@ -1269,7 +1287,7 @@ footer {
 
   .values__service-item--wapper {
     width: 100%;
-    /* padding-right: 32px; */
+    padding-right: 32px; */
   }
 
   .steps__container {
@@ -1357,7 +1375,7 @@ footer {
 
   .get-started__button--contact-us {
     margin-top: 0;
-    /* margin-left: 16px; */
+  
   }
 
   .footer__main--wrapper {
